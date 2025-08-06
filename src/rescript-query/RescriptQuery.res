@@ -291,6 +291,7 @@ module TanstackQuery_InfiniteQuery = {
   type infiniteQueryOptions<'queryKey, 'queryData, 'queryError> = {
     queryKey?: 'queryKey,
     queryFn?: inifiniteQueryFunctionContext<'queryKey> => Js.Promise.t<'queryData>,
+    initialPageParam: int,
     enabled?: bool,
     retry?: TanstackQuery_Types.retryValue<'queryError>,
     retryOnMount?: bool,

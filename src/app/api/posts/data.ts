@@ -29,6 +29,16 @@ export const posts: PostsData = {
       body: 'Good UI design focuses on simplicity and clarity.',
     },
     {
+      id: 51,
+      title: 'Color Theory Stuff',
+      body: 'Understanding color is fun.',
+    },
+    {
+      id: 52,
+      title: 'I like Coloring',
+      body: 'yeah',
+    },
+    {
       id: 5,
       title: 'Color Theory Basics',
       body: 'Understanding color is crucial for effective design.',

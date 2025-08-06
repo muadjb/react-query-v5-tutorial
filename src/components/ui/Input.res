@@ -4,7 +4,7 @@
 @module("../../lib/utils.ts") @variadic external cn: array<string> => string = "cn"
 
 @react.component
-let make = (~className, ~type_, ~placeholder, ~value, ~onChange) => {
+let make = (~className, ~type_, ~placeholder, ~value, ~onChange, ~disabled=false) => {
   <input
     type_
     placeholder
