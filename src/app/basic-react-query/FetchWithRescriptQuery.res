@@ -11,6 +11,8 @@ let make = (~category) => {
   let {data, isLoading, isError, error, _} = RescriptQuery.useQuery({
     queryKey: ["posts", category],
     queryFn: _ => fetchData(`/api/posts?category=${category}`),
+    // refetchOnWindowFocus: RescriptQuery.Query.refetchOnWindowFocus(#bool(false)),
+    refetchOnWindowFocus: RescriptQuery.Utils.refetchOnWindowFocus(#bool(true)),
   })
 
   Console.log2(`data`, data)
@@ -33,7 +35,6 @@ let make = (~category) => {
             <li key={post.id->Int.toString} className="border p-3 rounded">
               <h3 className="font-semibold"> {post.title->React.string} </h3>
               <p> {post.body->React.string} </p>
-              <p> {post.jeff->React.string} </p>
             </li>
           })
           ->React.array}

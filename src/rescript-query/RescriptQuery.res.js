@@ -2,6 +2,8 @@
 
 import * as Pervasives from "rescript/lib/es6/Pervasives.js";
 
+let TanstackQuery_Types = {};
+
 let Provider = {};
 
 let TanstackQuery_Client = {
@@ -84,9 +86,14 @@ let InfiniteQuery;
 
 let Mutation;
 
+let Query;
+
+let Types;
+
 let Utils;
 
 export {
+  TanstackQuery_Types,
   TanstackQuery_Client,
   TanstackQuery_Hooks,
   TanstackQuery_InfiniteQuery,
@@ -97,6 +104,8 @@ export {
   Hooks,
   InfiniteQuery,
   Mutation,
+  Query,
+  Types,
   Utils,
   DevTools,
 }
