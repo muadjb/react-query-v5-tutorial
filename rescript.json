@@ -1,0 +1,37 @@
+{
+  "name": "react-query-v5-tutorial",
+  "jsx": {
+    "version": 4,
+    "mode": "automatic"
+  },
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    },
+    {
+      "dir": "tests",
+      "subdirs": true,
+      "type": "dev"
+    }
+  ],
+  "compiler-flags": [],
+  "package-specs": [
+    {
+      "module": "esmodule",
+      "in-source": true,
+      "generate-types": true
+    }
+  ],
+  "suffix": ".res.js",
+  "namespace": false,
+  "dependencies": [
+    "@rescript/react",
+    "@rescript/core"
+  ],
+  "dev-dependencies": [],
+  "warnings": {
+    "number": "+A-4-42-48-26-27-102",
+    "error": "+A-4-44"
+  }
+}
